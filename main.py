@@ -1,3 +1,7 @@
+driver = 0
+username = '######'  # Your Instagram Username
+password = '$$$$$$'  # Your Instagram Password
+
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
@@ -7,15 +11,10 @@ import time
 import login #the other py file we created
 import getpages
 
-
-driver = 0
-username = '9315992643'
-password = '8860440585'
-
 def main() :
     global driver
     print("running script")
-    driver = webdriver.Chrome('F://My Projects/Instagram Bot/chromedriver.exe') # You have to download chromedriver.exe
+    driver = webdriver.Chrome('chromedriver.exe') # You have to download chromedriver.exe
     l = login.Login(driver,username,password)
     l.signin()
     time.sleep(10)
@@ -35,5 +34,11 @@ def main() :
     
 if __name__ == '__main__':  # If name of the file  is  main() then
     main() 
+
+
+
+
+
+
     
-    
+

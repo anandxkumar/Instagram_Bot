@@ -64,7 +64,7 @@ class Getpages :
                 return True
                 
         except:
-            print("except waala true")
+            print("")
             return True
         
     
@@ -88,7 +88,7 @@ class Getpages :
     
     
     def follow_page(self) :
-         print("Into it")
+         print("")
          self.driver.implicitly_wait(5)
          
          #follow = WebDriverWait(self.driver,60).until(EC.presence_of_element_located((By.XPATH,'//*[@id="react-root"]/section/main/div/header/section/div[2]/div/span/span[1]'))) # Follow the button
